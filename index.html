@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cursos EtecVAV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>INTERFACES WEB II</p>
+        <h1>Lista de Cursos EtecVAV</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicionar cursos</h2>
+            <form>
+                <div class="campo">
+                    <label for="ititulo">Título:</label>
+                    <input type="text" name="titulo" id="ititulo" placeholder="Título do curso" required>
+                </div>
+                <div class="campo">
+                    <label for="idescricao">Descrição:</label>
+                    <input type="text" name="descricao" id="idescricao" placeholder="Descrição do curso" required>
+                </div>
+                <div id="linha">
+                    <div class="campo">
+                        <label for="categoria">Categoria:</label>
+                        <select name="categoria" id="categoria">
+                            <option value="tecnicos">Cursos técnicos</option>
+                            <option value="m-tec">Cursos M-Tec</option>
+                            <option value="gestaoambiente">Cursos de Gestão e Ambiente</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="imagem">Imagem:</label>
+                        <input type="file" name="imagem" id="imagem" accept="image/*">
+                    </div>
+                </div>
+                <button type="submit">Adicionar curso</button>
+            </form>
+        </section>
+
+        <section id="cursos-tecnicos">
+            <details>
+                <summary><h2>Cursos Técnicos</h2></summary>
+                
+                <article class="curso">
+                    <div>
+                        <h3>Administração</h3>
+                        <p><strong>Tipo:</strong> Curso Técnico</p>
+                        <p>Descrição: Curso ligado a rotinas de empresas, como compras, vendas, produção, documentos, atendimento e apoio ao setor de recursos humanos.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/tecnicos/administracao.jpg" alt="Curso Técnico Administração">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Desenvolvimento de Sistemas</h3>
+                        <p><strong>Tipo:</strong> Curso Técnico</p>
+                        <p>Descrição: Curso voltado para analisar, projetar, testar, documentar e manter sistemas de informação, usando linguagens de programação e banco de dados.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/tecnicos/desenvolvimento.jpg" alt="Curso Técnico Desenvolvimento de Sistemas">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Edificações</h3>
+                        <p><strong>Tipo:</strong> Curso Técnico</p>
+                        <p>Descrição: Curso relacionado a projetos de arquitetura e engenharia civil, planejamento, fiscalização de obras e apoio em manutenção predial.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/tecnicos/edificacoes.jpg" alt="Curso Técnico Edificações">
+                    </div>
+                </article>
+            </details>
+        </section>
+
+        <section id="cursos-mtec">
+            <details>
+                <summary><h2>Cursos M-Tec</h2></summary>
+
+                <article class="curso">
+                    <div>
+                        <h3>Design de Interiores</h3>
+                        <p><strong>Tipo:</strong> Curso M-Tec</p>
+                        <p>Descrição: Curso que trabalha organização de espaços residenciais e comerciais, considerando gosto, necessidade, decoração e acompanhamento do projeto.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/mtec/design.jpg" alt="Curso M-Tec Design de Interiores">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Informática para Internet</h3>
+                        <p><strong>Tipo:</strong> Curso M-Tec</p>
+                        <p>Descrição: Curso focado na criação e manutenção de websites, identidade visual de páginas, bancos de dados para web e plataformas digitais.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/mtec/informatica.jpg" alt="Curso M-Tec Informática para Internet">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Logística</h3>
+                        <p><strong>Tipo:</strong> Curso M-Tec</p>
+                        <p>Descrição: Curso que envolve estoque, recebimento, transporte, separação de mercadorias, distribuição de produtos e organização de processos.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/mtec/logistica.jpg" alt="Curso M-Tec Logística">
+                    </div>
+                </article>
+            </details>
+        </section>
+
+        <section id="cursos-gestao-ambiente">
+            <details>
+                <summary><h2>Cursos Gestão e Ambiente</h2></summary>
+
+                <article class="curso">
+                    <div>
+                        <h3>Meio Ambiente</h3>
+                        <p><strong>Tipo:</strong> Gestão e Ambiente</p>
+                        <p>Descrição: Curso ligado a ações de proteção ambiental, educação ambiental, controle de água, esgoto, resíduos, saneamento e recursos hídricos.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/gestaoambiente/meioambiente.jpg" alt="Curso de Gestão e Ambiente Meio Ambiente">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Recursos Humanos</h3>
+                        <p><strong>Tipo:</strong> Gestão e Ambiente</p>
+                        <p>Descrição: Curso voltado para processos de seleção, testes, documentação de funcionários, folha de pagamento, benefícios e apoio administrativo.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/gestaoambiente/rh.jpg" alt="Curso de Gestão e Ambiente Recursos Humanos">
+                    </div>
+                </article>
+
+                <article class="curso">
+                    <div>
+                        <h3>Segurança do Trabalho</h3>
+                        <p><strong>Tipo:</strong> Gestão e Ambiente</p>
+                        <p>Descrição: Curso que estuda identificação de riscos, normas de segurança, prevenção de acidentes, treinamentos e equipamentos de proteção.</p>
+                        <button type="button">Excluir curso</button>
+                    </div>
+                    <div>
+                        <img src="img/gestaoambiente/seguranca.jpg" alt="Curso de Gestão e Ambiente Segurança do Trabalho">
+                    </div>
+                </article>
+            </details>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        
+        function adicionarEventoExcluir(botao) {
+            botao.addEventListener("click", function(e) {
+                const cursoParaExcluir = e.target.closest("article.curso");
+                if (cursoParaExcluir) {
+                    cursoParaExcluir.remove();
+                }
+            });
+        }
+
+        const botoesExcluirExistentes = document.querySelectorAll(".curso button");
+        botoesExcluirExistentes.forEach(adicionarEventoExcluir);
+
+        const form = document.querySelector("form");
+        
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); 
+
+            const titulo = document.getElementById("ititulo").value;
+            const descricao = document.getElementById("idescricao").value;
+            const categoria = document.getElementById("categoria").value;
+            const imagemInput = document.getElementById("imagem");
+
+            let imagemSrc = "";
+            if (imagemInput.files && imagemInput.files[0]) {
+                imagemSrc = URL.createObjectURL(imagemInput.files[0]);
+            }
+
+            let secaoId = "";
+            let tipoTexto = "";
+            
+            if (categoria === "tecnicos") {
+                secaoId = "cursos-tecnicos";
+                tipoTexto = "Curso Técnico";
+            } else if (categoria === "m-tec") {
+                secaoId = "cursos-mtec";
+                tipoTexto = "Curso M-Tec";
+            } else if (categoria === "gestaoambiente") {
+                secaoId = "cursos-gestao-ambiente";
+                tipoTexto = "Gestão e Ambiente";
+            }
+
+            const novoCurso = document.createElement("article");
+            novoCurso.classList.add("curso");
+
+            novoCurso.innerHTML = `
+                <div>
+                    <h3>${titulo}</h3>
+                    <p><strong>Tipo:</strong> ${tipoTexto}</p>
+                    <p>Descrição: ${descricao}</p>
+                    <button type="button">Excluir curso</button>
+                </div>
+                <div>
+                    <img src="${imagemSrc}" alt="Imagem do curso ${titulo}" ${!imagemSrc ? 'style="display:none;"' : ''}>
+                </div>
+            `;
+
+            const novoBotaoExcluir = novoCurso.querySelector("button");
+            adicionarEventoExcluir(novoBotaoExcluir);
+
+            const secaoDestino = document.querySelector(`#${secaoId} details`);
+            secaoDestino.appendChild(novoCurso);
+
+            secaoDestino.open = true;
+
+            form.reset();
+        });
+    });
+    </script>
+</body>
+</html>
